@@ -6,9 +6,9 @@ function Nav() {
     <>
       <ul className="flex flex-row justify-center gap-6 mb-14">
         <li><NavLink to="/products"><MenuTypeButton type="all"/></NavLink></li>
-        <li><NavLink to="/about"><MenuTypeButton type="donut"/></NavLink></li>
-        <li><MenuTypeButton type="beverage"/></li>
-        <li><MenuTypeButton type="goods"/></li>
+        <li><NavLink to="/donut"><MenuTypeButton type="donut"/></NavLink></li>
+        <li><NavLink to="/beverage"><MenuTypeButton type="beverage"/></NavLink></li>
+        <li><NavLink to="/goods"><MenuTypeButton type="goods"/></NavLink></li>
       </ul>
     </>
   )

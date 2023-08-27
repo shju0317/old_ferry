@@ -2,8 +2,8 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from '@/views/Home';
 import ProductList from '@/views/ProductList';
 import RootLayout from '@/views/RootLayout';
-import NotFound from './views/NotFound';
-import Logo from './components/Logo';
+import NotFound from '@/views/NotFound';
+import Order from '@/views/Order';
 
 const router = createBrowserRouter([
   { path: '/', 
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'products', element: <ProductList /> },
-      { path: 'about', element: <Logo /> }
+      { path: 'order', element: <Order /> }
     ]
   }
 ]);
