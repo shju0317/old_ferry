@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 function Logo() {
   return (
-    <a><img src="/public/logo.webp" alt="올드페리" /></a>
+    <Link to="/"><img src="/public/logo.webp" alt="올드페리" /></Link>
   )
 }
 

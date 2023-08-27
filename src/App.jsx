@@ -1,9 +1,10 @@
-import RootLayout from './layout/RootLayout'
+import { RouterProvider } from 'react-router-dom';
+import router from '@/routes';
 
 function App() {
   return (
     <>
-      <RootLayout className="bg-slate-700"/>
+      <RouterProvider router={router} />
     </>
   )
 }

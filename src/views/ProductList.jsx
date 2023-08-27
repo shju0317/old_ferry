@@ -1,6 +1,6 @@
 import Spinner from '@/components/Spinner';
 import useFetchData from '@/hooks/useFetchData';
-import ProductItem from './ProductItem';
+import ProductItem from '@/components/ProductItem';
 
 const PB_PRODUCTS_ENDPOINT = `http://127.0.0.1:8090/api/collections/oldferry_product/records`;
 
@@ -31,4 +31,4 @@ function ProductList() {
   );
 }
 
-export default ProductList;
+export default ProductList
