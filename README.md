@@ -3,20 +3,34 @@
 https://www.oldferrydonutus.com/
 
 ## :camera: 결과 스크린샷
+![Alt text](Animation02.gif)
 ![Alt text](image-4.png)
 
 ## :speech_balloon: 코드리뷰
 ### 컴포넌트 구성
-  <img src="image-5.png" height="600"/>
+  <img src="image-5.png" height="700"/>
 
 ### pocketbase
   - collection
     ![Alt text](image-2.png)
     ![Alt text](image-1.png)
+
 ### Framer Motion 애니메이션
 - Home.jsx
   ```jsx
-  
+    import { motion } from "framer-motion"
+  ```
+  ```jsx
+  <section className="flex mx-40 flex-wrap">
+    <div className="relative flex-auto w-1/2 h-1/2">
+      <motion.img initial={{scale: 0.8}} animate={{scale:1.0}} transition={{duration:0.5}} src="/main/donut03.webp" alt="donut03"/>
+      <span className="absolute text-orange-600 text-center font-extrabold text-7xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">DONUT WORRY,<br/> BE HAPPY!</span>
+    </div>
+    <div className="relative flex-auto w-1/2">
+      <img src="/main/donut04.webp" alt="donut04"/>  
+      <motion.img initial={{scale: 0}} animate={{rotate:360, scale:1}} src="/main/ofdEat01.png" alt="ofdEat01" className="absolute w-3/4 top-14  left-14"/>
+    </div>
+  </section>
   ```
 
 ### Router
@@ -69,7 +83,6 @@ https://www.oldferrydonutus.com/
   export default RootLayout
   ```  
 - Nav.jsx
-  ![Alt text](image-3.png)
   ```jsx
   import MenuTypeButton from "@/components/MenuTypeButton"
   import { NavLink } from 'react-router-dom';
@@ -90,6 +103,7 @@ https://www.oldferrydonutus.com/
   export default Nav
   ```  
 - MenuTypeButton 컴포넌트
+  ![Alt text](image-3.png)
   ```jsx
   function MenuTypeButton({type}) {
     return (
