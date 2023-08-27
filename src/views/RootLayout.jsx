@@ -1,5 +1,4 @@
 import Header from "@/views/Header"
-import Main from "@/views/Main";
 import Nav from '@/views/Nav';
 import Footer from '@/views/Footer';
 import { Outlet } from "react-router";
@@ -10,8 +9,9 @@ function RootLayout() {
     <>
       <Header/>
       <Nav/>
-      {/* <Main/> */}
-      <Outlet/>
+      <main>
+        <Outlet/>
+      </main>
       <Footer/>
     </>
   )

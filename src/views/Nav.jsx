@@ -5,10 +5,8 @@ function Nav() {
   return (
     <>
       <ul className="flex flex-row justify-center gap-6 mb-14">
-        <li><NavLink to="/products" className={({ isActive }) =>
-                isActive ? ' border-orange-500 bg-white text-orange-500' : ''
-              }><MenuTypeButton type="all"/></NavLink></li>
-        <li><MenuTypeButton type="donut"/></li>
+        <li><NavLink to="/products"><MenuTypeButton type="all"/></NavLink></li>
+        <li><NavLink to="/about"><MenuTypeButton type="donut"/></NavLink></li>
         <li><MenuTypeButton type="beverage"/></li>
         <li><MenuTypeButton type="goods"/></li>
       </ul>
